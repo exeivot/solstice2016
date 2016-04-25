@@ -1,0 +1,308 @@
+/* @override 
+	http://www.theresamonaco.com/~client/solstice/css/custom.css
+	http://theresamonaco.com/~client/solstice/css/custom.css
+*/
+
+body {
+	background-color: #ddd;
+	/*background-color: #48d8d8;*/
+	font-family: 'Arvo', serif;
+}
+
+/* @group typography */
+
+
+h4 {
+	margin-bottom: 1.15rem;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+/* @end */
+
+/* @group links */
+
+/* @end */
+
+/* @group buttons */
+
+button, .button {
+	background: #1d408c;
+	font-size: 1.15rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	word-spacing: 3px;
+	padding: 1.25rem 1rem 1rem;
+	border-radius: 30px;
+	border-bottom: 5px solid #142D62;
+}
+
+.button.donate {
+	background: #d02d21;
+	border-color: #8e1f17;
+}
+
+.purchase i {
+	font-size: 1.5rem;
+	line-height: 0;
+}
+
+.donate i {
+	font-size: 1.25rem;
+	line-height: 0;
+}
+
+button:hover, .button:hover, button:focus, .button:focus {
+	color: #fff;
+}
+
+.close-button {
+	background: transparent;
+	top: 0rem;
+	right: 0rem;
+	padding: 0;
+	border: 0;
+}
+
+.close-button i {
+	color: #000;
+	padding: 0.5rem;
+}
+
+#open-menu, .purchase-fixed, .donate-fixed {
+	background: transparent;
+	position: absolute;
+	top: 4rem;
+	padding: 0 0 0 0;
+	border: 0;
+	right: 3.65rem;
+	width: 0;
+	height: 0;
+}
+
+#open-menu i {
+	color: #000;
+	position: fixed;
+	font-size: 2rem;
+	padding: 0.25rem 0.5rem 0.25rem 0.6rem;
+}
+
+#menu-modal .button {
+	max-width: 360px;
+}
+
+.purchase-fixed {
+	top: 7rem;
+}
+
+.donate-fixed {
+	top: 10.25rem;
+}
+
+.purchase-fixed i, .donate-fixed i {
+	position: fixed;
+	color: #fff;
+	font-size: 1.65rem;
+	background: #1d408c;
+	width: 45px;
+	height: 44px;
+	padding: 0.6rem 0.5rem;
+	text-align: center;
+	border-radius: 6px;
+}
+
+.donate-fixed i {
+	background: #d02d21;
+}
+
+.fixed {display: none;}
+
+/* @end */
+
+/* @group menu modal */
+
+#menu-modal {
+	background: #aaa;
+	width: 100%;
+	max-width: 100%;
+	height: 100vh;
+	top: 0 !important;
+	padding: 2.5rem;
+}
+
+#menu-modal-inner {
+	background: #fff;
+	margin: auto;
+	padding: 2rem 1rem 3rem;
+	position: relative;
+}
+
+#menu-modal-inner .row {
+	position: relative;
+	padding: 0 1rem;
+}
+
+#menu-nav {
+	float: right;
+}
+
+#menu-overview-content {
+	margin-top: 1rem;
+}
+
+#menu-overview-content h3 {
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+
+#menu-overview-content h4 {
+	margin-top: 3rem;
+	margin-bottom: 0.5rem;
+}
+
+#menu-overview-content .purchase {
+	margin-top: 2rem;
+}
+
+ul.social {
+	margin: 0;
+}
+
+ul.social li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 1rem;
+}
+
+ul.social li a {
+	font-size: 4rem;
+	line-height: 0;
+}
+
+#nav {
+	margin-top: 2rem;
+	margin-left: 2rem;
+}
+
+#nav li {
+	margin-bottom: 1.8rem;
+}
+
+#nav li a {
+	color: #000;
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+#nav li a:hover {
+}
+
+/* @end */
+
+/* @group layout */
+
+#wrapper {
+	background: #fff;
+	margin: 0 2.5rem 0;
+	min-height: 1200px;
+}
+
+#wrapper-inner {
+	max-width: 75rem;
+	margin: auto;
+	padding: 2rem 1rem;
+	position: relative;
+}
+
+section {
+	padding: 3rem 0;
+}
+
+#header {
+	min-height: 600px;
+}
+
+/* @end */
+
+/* @group footer */
+
+#footer {
+	padding-left: 3.5rem;
+	padding-right: 3.5rem;
+}
+
+#copyright {
+	font-size: 0.75rem;
+}
+
+/* @end */
+
+/* @group media queries */
+
+/* Large Screens */
+@media screen and (min-width: 60em) {
+	#menu-modal-inner {
+		height: 100% !important;	
+	}
+	#menu-overview-content {
+		padding-right: 4rem;
+	}
+}
+
+/* Small Screens */
+@media only screen and (max-width: 639px) {
+	#menu-modal {
+		padding: 1rem;
+	}
+	#menu-modal-inner {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	#menu-modal-inner .row {
+		padding: 0;
+	}
+	#menu-nav {
+		float: left;
+	}
+	#open-menu {
+		top: 2.5rem;
+	}
+	#menu-overview-content .purchase {
+		margin-top: 0;
+	}
+	#nav {
+		margin-top: 1.25rem;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+	#nav li {
+		margin-bottom: 1.15rem;
+	}
+	#nav li:last-child {
+		margin-bottom: 0.25rem;
+	}
+	#nav li a {
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 1.25rem;
+	}
+	#wrapper {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	#menu-overview h3, #menu-overview p {
+		display: none;
+	}
+	#menu-overview h4 {
+		margin-top: 1.5rem;
+	}
+	#footer {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+/* @end */
